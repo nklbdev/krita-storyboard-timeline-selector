@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=storyboardTimelineSelector
+X-Python-2-Compatible=false
+X-Krita-Manual=Manual.html
+Name=Storyboard Timeline Selector
+Comment=Selects frames on timeline when a story is selected in the storyboard
