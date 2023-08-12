@@ -7,37 +7,54 @@
     <a href="Manual_ru.html"><img src="https://img.shields.io/badge/lang-ru-green.svg" alt="In Russian"/></a>
     <h3>Storyboard timeline selector: выбирает диапазон кадров на линии времени при выборе истории</h3>
 
-    <h3>Why use it</h3>
+    <h3>Почему</h3>
 
     <p>
-        Some text
+        В Krita есть возможность создавать "истории" - последовательные диапазоны кадров,
+        которые можно было бы удобно использовать для создания множества анимаций
+        одного персонажа в одном файле для использования как ресурса для игровых движков.
+        Однако в Krita крайне неудобно выбирать диапазон кадров, который будет
+        проигрываться в данный момент (например, чтобы зациклить его и посмотреть,
+        органично ли выглядит анимация бега). Для этого нужно зайти в меню "линии времени"
+        (Timeline docker) и явно указать цифрами начальный и конечный кадры диапазона.
     </p>
 
-    <h3>How to use it</h3>
+    <h3>Как установить</h3>
+
+    <ul>
+        <li>Склонируйте репозиторий или скачайте его содержимое как ZIP-архив.</li>
+        <li>Запустите Krita.</li>
+        <li>В Krita выберите пункт меню "Settings -> Manage Resources..." (Настройки -> Управление Ресурсами...).</li>
+        <li>В открывшемся окне нажмите кнопку "Open Resource Folder" (Открыть папку с ресурсами) - откроется окно файлового менеджера. Окно "Manage Resources" можно закрыть.</li>
+        <li>Скопируйте папку "pykrita" из директории репозитория в папку ресурсов Krita с заменой файлов.</li>
+        <li>Перезапустите Krita (это необходимо для обнаружения нового плагина).</li>
+        <li>В Krita выберите пункт меню "Settings -> Configure Krita..." (Настройки -> Настроить Krita).</li>
+        <li>В окне настроек выберите секцию "Python Plugin Manager" (Менеджер плагинов на языке Python).</li>
+        <li>Установите флажок перед названием плагина "Storyboard Timeline Selector".</li>
+        <li>Перезапустите Krita (это необходимо для инициализации выбранных плагинов).</li>
+    </ul>
+
+    <h3>Как пользоваться</h3>
+
+    <p>При выборе "истории" мышью в докере "Storyboard" на линии времени (докер "Timeline") автоматически выбирается диапазон кадров этой истории.</p>
+
+    <p align="center"><img alt="Screenshot" src="https://user-images.githubusercontent.com/7024016/257639175-980581e4-a8e4-49b3-868c-770bd20c2ce2.png" /></p>
+
+    <p>Для того, чтобы это проверить:</p>
+    <ul>
+        <li>Добавьте в интерфейс Krita докер "Storyboard". Для этого установите флажок в пункте меню "Settings -> Dockers -> Storyboard".</li>
+        <li>Добавьте одну или несколько "историй" в докере "Storyboard".</li>
+        <li>Нарисуйте кадры анимации для созданных "историй".</li>
+        <li>Попробуйте переключаться между "историями", нажимая на них левой кнопкой мыши и запускать проигрывание анимации.</li>
+    </ul>
+
+    <h3>Обратная связь</h3>
 
     <p>
-        Some text
-    </p>
-
-    <h3>Options</h3>
-
-    <p>
-        Some text
-    <pre>
-        pre text
-</pre>
-        Some text
-    </p>
-
-    <h3>Notes</h3>
-
-    <p>
-        Some text
-    </p>
-
-    <p>
-        If you have comments, suggestions, or need to contact me, send me an email at <a href="mailto:nklbdev@gmail.com">nklbdev@gmail.com</a>  or open
-        an issue at <a href="https://github.com/nklbdev/krita-storyboard-timeline-selectior">GitHub repository</a> (which is also where you can re-download it in case of need)
+        Если у вас есть комментарии, предложения или вам нужно связаться со мной,
+        отправьте мне электронное письмо по адресу <a href="mailto:nklbdev@gmail.com">nklbdev@gmail.com</a>
+        или создайте тикет в <a href= "https://github.com/nklbdev/krita-storyboard-timeline-selectior">репозитории на GitHub</a>
+        (где вы также можете повторно загрузить его в случае необходимости)
     </p>
 
 </body>
